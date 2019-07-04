@@ -2,3 +2,39 @@
     padding: 0;
     margin: 0;
 }
+.jumbotron {
+  background-image: url("../img/jumbotron_bg.jpg");
+  background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fff;
+    color: #3399ff;
+}
+
+.active {
+    background-color: #3399ff;
+}  
