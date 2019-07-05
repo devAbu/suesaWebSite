@@ -39,6 +39,63 @@
 </head>
 
 <body>
+
+  <div class="wrapper">
+        <header>
+
+              <nav>
+
+                    <div class="menu-icon">
+                          <i class="fa fa-bars fa-2x"></i>
+                    </div>
+
+                    <div class="logo">
+                          LOGO
+                    </div>
+
+                    <div class="menu">
+                          <ul>
+                                <li><a  href="#">HOME</a></li>
+                                <li><a  href="#">IZNAJMLJIVANJE NEKRETNINA</a></li>
+                                <li><a href="#">IZNAJMLJIVANJE AUTA</a></li>
+                          </ul>
+                    </div>
+              </nav>
+
+        </header>
+
+        <script type="text/javascript">
+
+        // Menu-toggle button
+
+        $(document).ready(function() {
+              $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+              });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function() {
+              if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+              }
+
+              else {
+                    $('nav').removeClass('black');
+              }
+        })
+
+
+        </script>
+
+
+
+
+
+
+
+
   <div id="navbarInclude"></div>
 
   <section id="jumbotron" class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
@@ -144,7 +201,7 @@
   <script>
     $(window).on("load", function () {
       $(document).ready(function () {
-        $('#navbarInclude').load("./templates/navbar.html");
+
         $('#footerInclude').load("./templates/footer.html");
       })
     })
