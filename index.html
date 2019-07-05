@@ -2,121 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SUESA</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/logoIcon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SUESA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/logoIcon.ico" type="image/x-icon">
 
-    <meta name="author" content="ABOC">
-    <meta name="keywords" content="suesa, nekretnine, aboc, rent-a-car, prodaja nekretnina">
-    <!--napisat neki opis-->
-    <meta name="description" content="">
-    <meta name="Designer" content="ABOC">
-    <meta name="Publisher" content="ABOC">
+  <meta name="author" content="ABOC">
+  <meta name="keywords" content="suesa, nekretnine, aboc, rent-a-car, prodaja nekretnina">
+  <!--napisat neki opis-->
+  <meta name="description" content="">
+  <meta name="Designer" content="ABOC">
+  <meta name="Publisher" content="ABOC">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="sticky.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="sticky.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div id="navbarInclude"></div>
+  <div id="navbarInclude"></div>
 
-    <div id="footerInclude"></div>
-    <!--jquery za includanje navbar-a i footer-a-->
-    <script>
-        $(window).on("load", function () {
-            $(document).ready(function () {
-                $('#navbarInclude').load("./templates/navbar.html");
-                $('#footerInclude').load("./templates/footer.html");
-            })
-        })
-    </script>
+  <section id="jumbotron" class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
+    <div class="container text-center hidden">
+      <h1 class="display-1 text-white text-uppercase">Ime Firme</h1>
 
+      <p class="text-white h5 mb-3 ml-4">Visit us on:</p>
+      <a href="https://www.instagram.com/bosniant/" class="btn btn-lg btn-primary mb-1 ml-5">
+        <i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
+      <a href="https://www.facebook.com" class="btn btn-lg btn-primary mb-1 ml-3">
+        <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
 
-    <!-- Jumbotron -->
-<div class="jumbotron p-0">
+    </div>
+  </section>
 
-  <!-- Card image -->
-  <div class="view overlay rounded-top" style="position: relative;
-  text-align: center;
-  color: white;">
-    <img src="https://annaeverywhere.com/wp-content/uploads/2018/02/sarajevo-bosnia-1200x800.jpg" class="img-fluid" alt="Sample image" style="width:5400px; height:auto;">
-    <a href="#">
-      <h3 class="centered">NAZIV FIRME</h3>
-    </a>
-  </div>
-
-  <!-- Card content -->
   <div class="card-body text-center mb-3">
 
     <!-- Title -->
     <h3 class="card-title h3 my-4"><strong>reklama</strong></h3>
     <!-- Text -->
-    <p class="card-text py-2">ako treba neka reklama ili nesto stavit vezano za kontakt ili ove ikonice ili neki kontakt broj bilo sta ILI STAVITI KAKO ZASTO KORISTITI NJIHOVE USLUGE NESTO U TOM FAZONU</p>
+    <p class="card-text py-2">ako treba neka reklama ili nesto stavit vezano za kontakt ili ove ikonice ili neki
+      kontakt broj bilo sta ILI STAVITI KAKO ZASTO KORISTITI NJIHOVE USLUGE NESTO U TOM FAZONU</p>
     <!-- Linkedin -->
-  <a class="fa-lg p-2 m-2 li-ic"><i class="fab fa-linkedin-in grey-text"></i></a>
-  <!-- Twitter -->
-  <a class="fa-lg p-2 m-2 tw-ic"><i class="fab fa-twitter grey-text"></i></a>
-  <!-- Dribbble -->
-  <a class="fa-lg p-2 m-2 fb-ic"><i class="fab fa-facebook-f grey-text"></i></a>
+    <a class="fa-lg p-2 m-2 li-ic"><i class="fab fa-linkedin-in grey-text"></i></a>
+    <!-- Twitter -->
+    <a class="fa-lg p-2 m-2 tw-ic"><i class="fab fa-twitter grey-text"></i></a>
+    <!-- Dribbble -->
+    <a class="fa-lg p-2 m-2 fb-ic"><i class="fab fa-facebook-f grey-text"></i></a>
 
   </div>
 
-</div>
-<!-- Jumbotron -->
 
-<div class="wrapper">
-  <form>
-    <h1>POŠALJI UPIT</h1>
+  <!-- Jumbotron -->
+  <!-- <div class="jumbotron p-0">
 
-    <hr class="sep"/>
-    <div class="group">
-      <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-      <label>Name</label>
+    <!-- Card image --
+    <div class="view overlay rounded-top" style="position: relative;
+  text-align: center;
+  color: white;">
+      <img src="https://annaeverywhere.com/wp-content/uploads/2018/02/sarajevo-bosnia-1200x800.jpg" class="img-fluid"
+        alt="Sample image" style="width:5400px; height:auto;">
+      <a href="#">
+        <h3 class="centered">NAZIV FIRME</h3>
+      </a>
     </div>
-    <div class="group">
-      <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-      <label>Email</label>
-    </div>
-    <div class="group">
-      <input type="password" required="required"/><span class="highlight"></span><span class="bar"></span>
-      <label>Password</label>
-    </div>
-    <div class="group">
-      <input type="number" required="required"/><span class="highlight"></span><span class="bar"></span>
-      <label>Number</label>
-    </div>
-    <div class="group">
-      <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
-      <label>Message</label>
-    </div>
-    <div class="btn-box">
-      <button class="btn btn-submit" type="submit">submit</button>
-      <button class="btn btn-cancel" type="button">cancel</button>
+
+    <!-- Card content --
+    <div class="card-body text-center mb-3">
+
+      <!-- Title --
+      <h3 class="card-title h3 my-4"><strong>reklama</strong></h3>
+      <!-- Text --
+      <p class="card-text py-2">ako treba neka reklama ili nesto stavit vezano za kontakt ili ove ikonice ili neki
+        kontakt broj bilo sta ILI STAVITI KAKO ZASTO KORISTITI NJIHOVE USLUGE NESTO U TOM FAZONU</p>
+      <!-- Linkedin --
+      <a class="fa-lg p-2 m-2 li-ic"><i class="fab fa-linkedin-in grey-text"></i></a>
+      <!-- Twitter --
+      <a class="fa-lg p-2 m-2 tw-ic"><i class="fab fa-twitter grey-text"></i></a>
+      <!-- Dribbble --
+      <a class="fa-lg p-2 m-2 fb-ic"><i class="fab fa-facebook-f grey-text"></i></a>
 
     </div>
-  </form>
-</div>
+
+  </div> -->
+  <!-- Jumbotron -->
+
+  <div class="wrapper">
+    <form>
+      <h1>POŠALJI UPIT</h1>
+
+      <hr class="sep" />
+      <div class="group">
+        <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <label>Name</label>
+      </div>
+      <div class="group">
+        <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <label>Email</label>
+      </div>
+      <!-- <div class="group">
+        <input type="password" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <label>Password</label>
+      </div> -->
+      <div class="group">
+        <input type="number" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <label>Number</label>
+      </div>
+      <div class="group">
+        <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span
+          class="bar"></span>
+        <label>Message</label>
+      </div>
+      <div class="btn-box">
+        <button class="btn btn-submit" type="submit">Send</button>
+        <button class="btn btn-cancel" type="reset">Clear</button>
+
+      </div>
+    </form>
+  </div>
+
+  <div id="footerInclude"></div>
+  <!--jquery za includanje navbar-a i footer-a-->
+  <script>
+    $(window).on("load", function () {
+      $(document).ready(function () {
+        $('#navbarInclude').load("./templates/navbar.html");
+        $('#footerInclude').load("./templates/footer.html");
+      })
+    })
+  </script>
+
 
 </body>
 
