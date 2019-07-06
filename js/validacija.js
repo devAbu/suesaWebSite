@@ -29,7 +29,7 @@ $('#button').click(function () {
         toastr.error("Please enter your message.")
     } else {
         $.ajax({
-            url: "../emailSend/sendEmail.php?task=feedback&fullName=" + fullName + "&email=" + email + "&phoneNumber=" + phoneNumber + "&message=" + message,
+            url: "./emailSend/sendEmail.php?task=message&fullName=" + fullName + "&email=" + email + "&phoneNumber=" + phoneNumber + "&message=" + message,
             success: function (data) {
                 if (data == 'sent') {
                     toastr.success("Vaša poruka je uspješno poslana. Hvala!")
