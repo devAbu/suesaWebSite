@@ -36,6 +36,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+  <script src="./toastr.js"></script>
+  <link rel="stylesheet" href="./toastr.css">
+
 </head>
 
 <body>
@@ -161,11 +164,12 @@
 
         <hr class="sep" />
         <div class="group">
-          <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <input type="text" required="required" id="fullName" /><span class="highlight"></span><span
+            class="bar"></span>
           <label>Name</label>
         </div>
         <div class="group">
-          <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <input type="email" required="required" id="email" /><span class="highlight"></span><span class="bar"></span>
           <label>Email</label>
         </div>
         <!-- <div class="group">
@@ -173,16 +177,17 @@
         <label>Password</label>
       </div> -->
         <div class="group">
-          <input type="number" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <input type="number" required="required" id="phoneNumber" /><span class="highlight"></span><span
+            class="bar"></span>
           <label>Number</label>
         </div>
         <div class="group">
-          <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span
-            class="bar"></span>
+          <textarea type="textarea" rows="5" required="required" id="message"></textarea><span
+            class="highlight"></span><span class="bar"></span>
           <label>Message</label>
         </div>
         <div class="btn-box">
-          <button class="btn btn-submit" type="submit">Send</button>
+          <button class="btn btn-submit" type="button" id="button">Send</button>
           <button class="btn btn-cancel" type="reset">Clear</button>
 
         </div>
@@ -192,6 +197,7 @@
     <div id="footerInclude"></div>
     <!--jquery za includanje navbar-a i footer-a-->
     <script src="./js/include.js"></script>
+    <script src="./js/validacija.js"></script>
 
 
 </body>
