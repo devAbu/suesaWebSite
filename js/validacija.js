@@ -8,6 +8,7 @@ $('#button').click(function () {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test($email);
     }
+
     toastr.options.closeButton = true;
     toastr.options.preventDuplicates = true;
     toastr.options.progressBar = true;
