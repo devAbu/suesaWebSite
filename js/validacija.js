@@ -28,6 +28,18 @@ $('#button').click(function () {
     } else if (message == "") {
         toastr.error("Please enter your message.")
     } else {
-        toastr.success("Hvala.")
+        $.ajax({
+            url: "../emailSend/sendEmail.php?task=feedback&fullName=" + fullName + "&email=" + email + "&phoneNumber=" + phoneNumber + "&message=" + message,
+            success: function (data) {
+                if (data == 'sent') {
+                    toastr.success("Vaša poruka je uspješno poslana. Hvala!")
+                } else {
+                    toastr.error("Došlo je do greške, molimo Vas da pokušate kasnije")
+                }
+            },
+            error: function (data, err) {
+                toastr.error("Došlo je do greške, molimo Vas da pokušate kasnije!")
+            }
+        });
     }
 })
