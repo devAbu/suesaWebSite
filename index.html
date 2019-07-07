@@ -44,35 +44,31 @@
 
 <body>
 
-    <div id="navbarInclude">
-      <div class="wrapper">
-        <header>
-              <nav>
-                    <div class="menu-icon">
-                          <i class="fa fa-bars fa-2x"></i>
-                    </div>
-                    <div class="menu">
-                          <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                          </ul>
-                    </div>
-              </nav>
-        </header>
-      </div>
+  <div id="navbarInclude" style="z-index:999 !important">
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </div>
+  </div>
 
-    <section id="jumbotron"
-      class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
-      <div class="container text-center hidden">
-        <h1 class="display-1 text-white text-uppercase">SUESSA</h1>
-  <div id="navbarInclude"></div>
+
 
   <section id="jumbotron" class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
     <div class="container text-center hidden">
-      <h1 class="display-1 text-white text-uppercase">Ime Firme</h1>
+      <h1 class="display-1 text-white text-uppercase">SUESA</h1>
 
       <p class="text-white h5 mb-3 ml-4">Visit us on:</p>
       <a href="https://www.instagram.com/bosniant/" class="btn btn-lg btn-primary mb-1 ml-5">
@@ -99,7 +95,7 @@
 
   </div>
 
-  <div class="container">
+  <div class="container" style="z-index: -1 !important">
     <div class="row">
       <div class="col-12  col-xl-5 ">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -267,8 +263,8 @@
           <img class="card-img" src="images/zvijezde.jpg" alt="Card image">
 
           <div class="card-img-overlay mt-5">
-            <h2 class="card-title text-white text-center" style="font-size:22px;">Najpovoljnije cijene</h5>
-              <p class="card-text text-white text-center">Nudimo povoljne cijene koje prati visoki kvalitet usluga</p>
+            <h2 class="card-title text-white text-center" style="font-size:22px;">Najpovoljnije cijene</h2>
+            <p class="card-text text-white text-center">Nudimo povoljne cijene koje prati visoki kvalitet usluga</p>
 
           </div>
         </div>
@@ -324,31 +320,26 @@
   <script src="./js/include.js"></script>
   <script src="./js/validacija.js"></script>
 
-    
-    <script type="text/javascript">
 
-      // Menu-toggle button
+  <script type="text/javascript">
+    // Menu-toggle button
 
-      $(document).ready(function() {
-            $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
-            });
+    $(document).ready(function () {
+      $(".menu-icon").on("click", function () {
+        $("nav ul").toggleClass("showing");
       });
+    });
 
-      // Scrolling Effect
+    // Scrolling Effect
 
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('black');
-            }
-
-            else {
-                  $('nav').removeClass('black');
-            }
-      })
-
-
-      </script>
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
 
 </body>
 

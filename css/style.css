@@ -265,7 +265,7 @@ nav.black ul {
 
 nav ul li {
   display: inline-block;
-  padding: 16px 40px;;
+  padding: 16px 40px;
 }
 
 nav ul li a {
@@ -289,33 +289,33 @@ nav ul li a {
 @media(max-width: 786px) {
 
   .logo {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
   }
 
   nav ul {
-        max-height: 0px;
-        background: #000;
+    max-height: 0px;
+    background: #000;
   }
 
   nav.black ul {
-        background: #000;
+    background: #000;
   }
 
   .showing {
-        max-height: 34em;
+    max-height: 34em;
   }
 
   nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
   }
 
   .menu-icon {
-        display: block;
+    display: block;
   }
 
 }
