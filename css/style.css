@@ -255,16 +255,17 @@ label {
   font-family: sans-serif;
   /* font-size: 10px; */
   letter-spacing: 0.3vw;
+  font-size: 2px !important;
   text-align: center;
   text-transform: uppercase;
-  text-color: black;
+  color: black;
   /*margin-top: 0.4%;*/
   text-decoration-style: solid;
 }
 
 #res_text {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 16.5px;
   /* line-height: 1.5vw; */
   text-align: justify;
   /* margin-left: 35%;
@@ -584,7 +585,8 @@ div.footer-link ul li a:hover {
 }
 
 h1 {
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: 25px !important;
   text-align: center;
   text-transform: uppercase;
   padding-top: 30px;
@@ -607,9 +609,9 @@ h1 span {
     padding-bottom: 10px;
   }
 
-  p {
+  /* p {
     font-size: 3vw !important;
-  }
+  } */
 
   .footer-section-one {
     padding: 12px;
@@ -623,3 +625,30 @@ h1 span {
 
 
 /*  Footer  */
+@media only screen and (min-width: 1000px) {
+  .display-1 {
+    font-size: 90px !important;
+  }
+
+  .h5 {
+    font-size: 30px !important;
+  }
+
+  .upitTekst {
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .display-1 {
+    font-size: 70px !important;
+  }
+
+  .h5 {
+    font-size: 25px !important;
+  }
+
+  .upitTekst {
+    font-size: 50px !important;
+  }
+}
