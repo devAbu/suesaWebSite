@@ -39,16 +39,36 @@
   <script src="./toastr.js"></script>
   <link rel="stylesheet" href="./toastr.css">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
 
-    <div id="navbarInclude"></div>
+    <div id="navbarInclude">
+      <div class="wrapper">
+        <header>
+              <nav>
+                    <div class="menu-icon">
+                          <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="menu">
+                          <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                          </ul>
+                    </div>
+              </nav>
+        </header>
+      </div>
+    </div>
 
     <section id="jumbotron"
       class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
       <div class="container text-center hidden">
-        <h1 class="display-1 text-white text-uppercase">Ime Firme</h1>
+        <h1 class="display-1 text-white text-uppercase">SUESSA</h1>
 
         <p class="text-white h5 mb-3 ml-4">Visit us on:</p>
         <a href="https://www.instagram.com/bosniant/" class="btn btn-lg btn-primary mb-1 ml-5">
@@ -151,6 +171,31 @@
     <script src="./js/include.js"></script>
     <script src="./js/validacija.js"></script>
 
+    
+    <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
 
 </body>
 
