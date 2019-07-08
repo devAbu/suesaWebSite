@@ -45,23 +45,6 @@
 <body>
 
   <div id="navbarInclude" style="z-index:999 !important">
-    <div class="wrapper">
-      <header>
-        <nav>
-          <div class="menu-icon">
-            <i class="fa fa-bars fa-2x"></i>
-          </div>
-          <div class="menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
   </div>
 
 
@@ -326,7 +309,7 @@
 
     $(document).ready(function () {
       $(".menu-icon").on("click", function () {
-        $("nav ul").toggleClass("showing");
+        $("nav > ul").toggleClass("showing");
       });
     });
 
@@ -335,8 +318,10 @@
     $(window).on("scroll", function () {
       if ($(window).scrollTop()) {
         $('nav').addClass('black');
+        $('.menu > ul > li > a').addClass('white')
       } else {
         $('nav').removeClass('black');
+        $('.menu > ul > li > a').removeClass('white')
       }
     })
   </script>

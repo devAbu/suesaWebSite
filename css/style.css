@@ -245,6 +245,7 @@ nav {
   width: 100%;
   line-height: 60px;
   opacity: 0.7;
+  transition: 1s
 }
 
 nav ul {
@@ -260,25 +261,50 @@ nav ul {
   transition: 1s;
 }
 
-nav.black ul {
-  background: #000;
+.black {
+  background: blue;
+  z-index: 10 !important;
+  transition: 1s;
+}
+
+.white {
+  color: white;
+}
+
+.white:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(87, 87, 87);
 }
 
 nav ul li {
   display: inline-block;
-  padding: 16px 40px;
+  padding: 16px 20px;
+
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 16px;
+  color: rgb(61, 61, 255);
+  font-size: 18px;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 10% 60% 10% 50%;
+  padding: 10px 10px 10px 10px;
+  transition: 1s;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 136);
+  background-color: white;
+  transition: 1s;
 }
 
 .menu-icon {
   line-height: 60px;
   width: 100%;
-  background: #000;
+  background: rgb(44, 44, 255);
   text-align: right;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -295,19 +321,26 @@ nav ul li a {
     margin-top: 16px;
   }
 
-  nav ul {
-    max-height: 0px;
-    background: #000;
+  nav {
+    opacity: 0.9 !important;
   }
 
+  /* nije tacan select */
+  nav ul {
+    max-height: 0px;
+    background-color: #000;
+  }
+
+  /* nije tacan select */
   nav.black ul {
-    background: #000;
+    background-color: #000;
   }
 
   .showing {
     max-height: 34em;
   }
 
+  /* nije tacan select */
   nav ul li {
     box-sizing: border-box;
     width: 100%;
