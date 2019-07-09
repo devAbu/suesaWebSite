@@ -304,27 +304,8 @@
   <script src="./js/validacija.js"></script>
 
 
-  <script type="text/javascript">
-    // Menu-toggle button
+  <script type="text/javascript" src="js/scroll.js"></script>
 
-    $(document).ready(function () {
-      $(".menu-icon").on("click", function () {
-        $("nav > ul").toggleClass("showing");
-      });
-    });
-
-    // Scrolling Effect
-
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-        $('.menu > ul > li > a').addClass('white')
-      } else {
-        $('nav').removeClass('black');
-        $('.menu > ul > li > a').removeClass('white')
-      }
-    })
-  </script>
 
 </body>
 
