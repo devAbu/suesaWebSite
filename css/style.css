@@ -262,19 +262,22 @@ nav ul {
 }
 
 .black {
-  background: rgb(102, 102, 255);
+  background: rgb(0, 0, 0);
   z-index: 10 !important;
   transition: 1s;
+  opacity: 0.8;
 }
 
 .white {
   color: white;
+  border: 1px solid white;
 }
 
 .white:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  background-color: white;
+  color: black
 }
+
 
 nav ul li {
   display: inline-block;
@@ -284,7 +287,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(61, 61, 255);
+  color: rgb(0, 0, 0);
   font-size: 18px;
   border: 1px solid black;
   margin-right: 10px;
@@ -296,8 +299,8 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  color: rgb(0, 0, 136);
-  background-color: white;
+  color: white;
+  background-color: black;
   transition: 1s;
 }
 
