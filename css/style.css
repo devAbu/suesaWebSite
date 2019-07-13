@@ -248,6 +248,10 @@ nav {
   transition: 1s
 }
 
+.hidden {
+  display: none
+}
+
 nav ul {
   line-height: 60px;
   list-style: none;
@@ -627,7 +631,11 @@ div.footer-link ul li {
   list-style-type: none;
   text-align: center;
   padding-top: 5px;
-  width: 100%
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 div.footer-link ul li a {
