@@ -16,29 +16,29 @@ $('#button').click(function () {
     toastr.options.extendedTimeOut = 1000;
 
     if (fullName == "") {
-        toastr.error('Molimo Vas da unesete Vaše ime.')
+        toastr.error('Please enter your name.')
     } else if (email == "") {
-        toastr.error("Molimo Vas da unesete Vašu E-mail adresu.")
+        toastr.error("Please enter your E-mail address.")
     } else if (!validateEmail(email)) {
-        toastr.warning("Molimo Vas da unesete ispravnu E-mail adresu.")
+        toastr.warning("Please enter a valid E-mail address.")
     } else if (phoneNumber == "") {
-        toastr.error("Molimo Vas da unesete Vaš broj telefona.")
+        toastr.error("Please enter your phone number.")
     } else if (phoneNumber == 0 || phoneNumber.length < 6 || phoneNumber.length > 15) {
-        toastr.warning("Molimo Vas da unese ispravan broj telefona. (Min: 6 Max: 15)")
+        toastr.warning("Please enter a valid number. (Min: 6 Max: 15)")
     } else if (message == "") {
-        toastr.error("Molimo Vas da uensete Vašu poruku.")
+        toastr.error("Please enter your message.")
     } else {
         $.ajax({
             url: "./emailSend/sendEmail.php?task=message&fullName=" + fullName + "&email=" + email + "&phoneNumber=" + phoneNumber + "&message=" + message,
             success: function (data) {
                 if (data == 'sent') {
-                    toastr.success("Vaša poruka je uspješno poslana. Hvala!")
+                    toastr.success("Your message sent successfully. Thanks!")
                 } else {
-                    toastr.error("Došlo je do greške, molimo Vas da pokušate kasnije")
+                    toastr.error("There was an error, please try later!")
                 }
             },
             error: function (data, err) {
-                toastr.error("Došlo je do greške, molimo Vas da pokušate kasnije!")
+                toastr.error("There was an error, please try later!")
             }
         });
     }
