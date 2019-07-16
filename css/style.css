@@ -408,9 +408,9 @@ nav ul li a:hover {
   border-style: solid;
   border-color: grey;
   border-radius: 2vw;
-  /*border-width: 20px 10px 4px 20px;*/
+  /* border-width: 20px 10px 4px 20px; */
   margin-top: 1%;
-  padding: 0.8%;
+  padding: 2%;
 }
 
 /*Moje slike*/
@@ -704,8 +704,9 @@ div.footer-link ul li a:hover {
 .footer-bottom {
   width: 100%;
   height: auto;
-  margin: auto;
-  margin-top: 10px;
+  /* 
+  margin: auto; */
+  margin-top: -15px;
   margin-bottom: 10px;
 }
 
@@ -791,4 +792,13 @@ h1 span {
   .upitTekst {
     font-size: 50px !important;
   }
+}
+
+.jezici {
+  color: white
+}
+
+.jezici:hover {
+  text-decoration: none;
+  color: red
 }
