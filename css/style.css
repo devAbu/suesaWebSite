@@ -704,8 +704,9 @@ div.footer-link ul li a:hover {
 .footer-bottom {
   width: 100%;
   height: auto;
-  margin: auto;
-  margin-top: 10px;
+  /* 
+  margin: auto; */
+  margin-top: -15px;
   margin-bottom: 10px;
 }
 
